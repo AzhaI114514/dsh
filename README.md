@@ -25,6 +25,8 @@ dsh plugin --profile desktop add github:AzhaI114514/dsh
 
 装完**重启一次 DSH**，设置里会出现「语音唤醒」。
 
+> `github:` 安装方式要求本机装了 Git；没装的话用下面的 zip 方式，不需要 Git。
+
 不想敲命令行：去 [Releases](https://github.com/AzhaI114514/dsh/releases) 下 `dsh-fairy-wake-0.1.1.zip`，解压到 `~/.dsh/plugins/`，再运行：
 
 ```bash
