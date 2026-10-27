@@ -17,21 +17,21 @@
 
 ## 安装
 
-插件包只有一行 profile patch：
+一条命令（推荐）：
 
-```yaml
-- insert:
-    - id: fairy-wake
-      name: 'dsh-fairy-wake'
+```bash
+dsh plugin --profile desktop add github:AzhaI114514/dsh
 ```
 
-把本目录放进 `~/.dsh/plugins/dsh-fairy-wake-0.1.0/`，在 profile `package.json` 加：
+装完**重启一次 DSH**，设置里会出现「语音唤醒」。
 
-```json
-"dsh-fairy-wake": "link:C:/Users/<你>/.dsh/plugins/dsh-fairy-wake-0.1.0"
+不想敲命令行：去 [Releases](https://github.com/AzhaI114514/dsh/releases) 下 `dsh-fairy-wake-0.1.1.zip`，解压到 `~/.dsh/plugins/`，再运行：
+
+```bash
+dsh plugin --profile desktop add link:<解压出来的那个目录>
 ```
 
-`pnpm install` 后把上面的 insert 追加到 `cordis.patch.yml`，重启 DSH。
+> 插件自带 `cordis.patch.yml`，`dsh plugin add` 会自动把它挂进 profile 的 bundle 层，不用手改 profile 的 `cordis.patch.yml`。
 
 ## 使用
 
