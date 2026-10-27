@@ -1,0 +1,5 @@
+# Fairy wake-word voice input: one client plugin line.
+# Requires the experimental voice-input bundle (speech-to-text remote + SenseVoice).
+- insert:
+    - id: fairy-wake
+      name: 'dsh-fairy-wake'

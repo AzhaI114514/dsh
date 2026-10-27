@@ -1,0 +1,52 @@
+{
+  "name": "dsh-fairy-wake",
+  "version": "0.1.1",
+  "description": "Fairy wake word voice input for DeepSeek Harness: say \"你好Fairy\" or just \"Fairy\", then transcribe the next sentence and send it immediately. Built on the official experimental voice-input / SenseVoice STT service.",
+  "type": "module",
+  "license": "MIT",
+  "author": "AzhaI114514 (https://github.com/AzhaI114514)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzhaI114514/dsh.git"
+  },
+  "homepage": "https://github.com/AzhaI114514/dsh#readme",
+  "bugs": {
+    "url": "https://github.com/AzhaI114514/dsh/issues"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.1",
+    "node": ">=22"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek-harness",
+    "voice",
+    "wake-word",
+    "speech"
+  ],
+  "icon": "icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}
